@@ -15,23 +15,34 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Team team = new Team();
-            team.setName("teamA");
-            em.persist(team);
-            for (int i = 0; i<100; i++){
-                Member member = new Member();
-                member.setUsername("member"+ i);
-                member.setAge(i);
-                member.setTeam(team);
+            Team teamA = new Team();
+            teamA.setName("teamA");
+            em.persist(teamA);
 
-                em.persist(member);
-            }
+            Team teamB = new Team();
+            teamB.setName("teamB");
+            em.persist(teamB);
 
-            em.flush();
-            em.clear();
+            Member member1 = new Member();
+            member1.setUsername("회원1");
+            member1.setTeam(teamA);
+            em.persist(member1);
 
-            List<Member> result = em.createQuery("select m from Member m left join m.team t ", Member.class)
-                    .getResultList();
+            Member member2 = new Member();
+            member2.setUsername("회원2");
+            member2.setTeam(teamB);
+            em.persist(member2);
+
+            Member member3 = new Member();
+            member3.setUsername("회원3");
+            member3.setTeam(teamA);
+            em.persist(member3);
+
+
+            String query = "update Member m set m.age = 20";
+            int resultCount = em.createQuery(query)
+                    .executeUpdate();
+            System.out.println("resultCount = " + resultCount);
 
             tx.commit();
         } catch (Exception e) {
