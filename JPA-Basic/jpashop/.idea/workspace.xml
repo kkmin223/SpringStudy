@@ -7,8 +7,6 @@
     <list default="true" id="54f091f4-12b8-479b-b171-6f99a3d7a966" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jpql/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jpql/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpql/src/main/java/jpql/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jpql/src/main/java/jpql/JpaMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpql/src/main/java/jpql/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jpql/src/main/java/jpql/Team.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +115,9 @@
       <workItem from="1649031010266" duration="597000" />
       <workItem from="1649053989442" duration="598000" />
       <workItem from="1649070279394" duration="597000" />
+      <workItem from="1649253452258" duration="641000" />
+      <workItem from="1649255733712" duration="624000" />
+      <workItem from="1657432280351" duration="44000" />
     </task>
     <servers />
   </component>
@@ -140,7 +141,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/JpaMain.java</url>
           <line>13</line>
-          <properties class="jpabook.jpashop.JpaMain" method="main">
+          <properties class="jpabook.jpashop.JpaMain">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
